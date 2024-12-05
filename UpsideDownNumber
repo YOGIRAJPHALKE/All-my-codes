@@ -1,0 +1,36 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+ int ReverceNumberinupsidedown(int iNum)
+    {
+        int iNo=0;
+        int iRev=0;
+        int iResult=0;
+        int N=1;
+        while(iNum>0)
+        {
+            iNo=iNum%10;
+           // printf(" %i\n",iRev);
+            iNum=iNum/10;
+            iRev=9-iNo;
+            iResult=iResult+iRev*N;
+           //  printf(" %i\n",iRev);
+             N=N*10;
+        }
+        return iResult;
+    }
+
+int main() {
+    // Write C code here
+      auto int iValue1 = 0;
+        auto int iRet = 0.0f;
+
+        printf("Enter the marks : \n");
+        scanf("%d",&iValue1);
+
+        fRet = ReverceNumberinupsidedown(iValue1);
+
+        printf("Your percentage is : %i\n",iRet);
+
+    return 0;
+}
